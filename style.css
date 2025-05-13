@@ -1,0 +1,160 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    width: 100%;
+}
+
+.sidebar-menu .menu-item {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu .menu-item.active {
+    background-color: #34495e;
+    font-weight: bold;
+}
+
+.sidebar-menu .menu-item .icon {
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+/* Content */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    margin-bottom: 20px;
+}
+
+.content-header input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* User List */
+.user-list {
+    margin-bottom: 60px;
+}
+
+.user-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-item:last-child {
+    border-bottom: none;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-details {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.user-details span {
+    margin-right: 10px;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.user-details .admin {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.user-details .employee {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.user-status {
+    font-weight: bold;
+}
+
+.user-status.active {
+    color: #2ecc71;
+}
+
+.user-status.suspended {
+    color: #f39c12;
+}
+
+/* Add Button */
+.add-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #27ae60;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-button:hover {
+    background-color: #2ecc71;
+}
